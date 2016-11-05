@@ -1,2 +1,2 @@
 # CRUD
-Simple CRUD application with Express without user authentication
+Simple CRUD application created with Express.js and MongoDB there is not any kind of user authentication for now.
