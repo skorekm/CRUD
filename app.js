@@ -18,11 +18,7 @@ var Blogschema = new mongoose.Schema({
 	date: {type:Date,default:Date.now}
 });
 
-
 var Blog = mongoose.model("Blog",Blogschema);
-
-
-
 
 app.get("/",function(req,res){
 	res.redirect("posts");
