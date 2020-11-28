@@ -2,9 +2,9 @@ const express = require("express");
 const mongoose = require("mongoose");
 const app = express();
 
-const PORT = 8000;
+const PORT = 8833;
 
-mongoose.createConnection("mongodb://db:27017/testing");
+mongoose.connect("mongodb://mongo:27017/testing", {useNewUrlParser: true, useUnifiedTopology: true});
 
 app.get("/", function(req, res) {
   res.send({'hello': 'my-friend'});
